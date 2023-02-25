@@ -1,4 +1,6 @@
-
+nav {
+    padding: 10px;
+}
 nav ul {
     background-color: lightgrey;
     margin: 0px;
