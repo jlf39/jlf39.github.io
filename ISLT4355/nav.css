@@ -1,0 +1,30 @@
+
+nav ul {
+    background-color: lightgrey;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+nav a {
+    padding: 10px;
+    color: black;
+    line-height: 15px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: darkgrey;
+}
+
+nav li {
+    float: left;
+}
+
+nav {
+    position: fixed;
+    background-color: lightgray;
+    top: 0px;
+    width: 100%;
+    
+}
