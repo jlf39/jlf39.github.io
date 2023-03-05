@@ -1,3 +1,6 @@
+.p2::first-line{
+    text-indent: 1em;
+}
 body {
     padding-top: 30px;
 }
@@ -11,3 +14,21 @@ a {
     background-color: lightgray;
     display: inline-block;
 }
+
+
+.p1::first-letter{
+    color: magenta;
+}
+
+.p1, .p2{
+    box-sizing: border-box;
+    padding: 5px;
+}
+/*
+#p1::first-letter {
+    color: magenta;
+    
+
+}
+*/
+
