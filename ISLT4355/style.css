@@ -1,20 +1,31 @@
 .p2::first-line{
     text-indent: 2em;
 }
+
 body {
-    padding-top: 30px;
+    padding-top: 10px;
+    border-bottom: 1px solid black;
+}
+header {
+    padding: 10px;
+    border-bottom: 1px solid black;
 }
 h1 {
     color: #3300ff;
 }
 a {
-    padding: 7px;
+    padding: 10px;
     border: 1px solid black;
     margin: 5px;
     background-color: lightgray;
     display: inline-block;
 }
 
+footer {
+    font-size: 13px;
+    padding: 10px;
+    border-top: 1px solid black;
+}
 
 .p1::first-letter{
     color: magenta;
@@ -31,4 +42,20 @@ a {
 
 }
 */
+@media (max-width: 850px) {
+    body {
+        font-size: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 350px) {
+    body {
+        margin: 10px;
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
