@@ -19,7 +19,7 @@ Tested: 3/5/2023
 -->
                 <link rel="stylesheet" type="text/css" href="style.css">
                 <link rel="stylesheet" type="text/css" href="nav.css">
-                <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+                <meta name="viewport" content="width=device-width, initial-scale=1">
                <meta charset="utf-8">
                <title>Home</title>
 </head>
@@ -42,7 +42,18 @@ Tested: 3/5/2023
         <p>Author: Josh Linck</p>
         <p>jlf39@umsystem.edu</p>
     </footer>
-    
+    <nav id="mobileNavbar">
+        <label id="hamburger"&#9776;></label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="learn.html">Learn</a>
+                <ul class="navbar2"><li><a href="resources.html">resources</a></li>
+                    <li><a href="#contact.html">#contact</a></li>
+                    <li><a href="#project.html">#project</a></li></ul>
+        </li>
+        </ul>
+    </nav>
     <nav>
         <ul class="navbar">
             <li><a href="index.html">Home</a></li>
@@ -54,6 +65,7 @@ Tested: 3/5/2023
         </li>
             </ul>
         </nav>
+    
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 
-nav ul {
+nav ul{
     display: flex;
     flex-direction: row;
     background-color: lightgrey;
@@ -8,7 +8,7 @@ nav ul {
     list-style: none;
 }
 
-nav a {
+nav a{
     padding: 10px;
     color: black;
     line-height: 15px;
@@ -16,15 +16,15 @@ nav a {
     padding: 10px 10px 10px 10px;
 }
 
-nav a:hover {
+nav a:hover{
     background-color: darkgrey;
 }
 
-nav li {
+nav li{
     float: left;
 }
 
-nav {
+nav{
     position: fixed;
     background-color: lightgray;
     top: 0px;
@@ -57,17 +57,17 @@ nav>ul>li:hover>ul{
     margin: 0px;
     padding: 0px;
 }
-.navbar > li {
+.navbar > li{
     display: inline-block;
     position: relative;
 }
 
-.navbar > li > a {
+.navbar > li > a{
     display: block;
     padding: 10px;
 }
 
-.navbar > li > ul {
+.navbar > li > ul{
     position: absolute;
     top: 100%;
     display: none;
@@ -80,7 +80,7 @@ nav>ul>li:hover>ul{
     display: block;
 }
 
-.navbar > li > ul > li > a {
+.navbar > li > ul > li > a{
     display: block;
     padding: 10px;
 
