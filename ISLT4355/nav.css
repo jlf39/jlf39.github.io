@@ -1,87 +1,155 @@
 
-nav ul{
+.mnav, .dnav {
     display: flex;
     flex-direction: row;
-    background-color: lightgrey;
-    margin: 0px;
-    padding: 10px;
-    list-style: none;
-}
-
-nav a{
-    padding: 10px;
-    color: black;
-    line-height: 15px;
-    display: block;
-    padding: 10px 10px 10px 10px;
-}
-
-nav a:hover{
-    background-color: darkgrey;
-}
-
-nav li{
-    float: left;
-}
-
-nav{
-    position: fixed;
+    top: 0;
     background-color: lightgray;
-    top: 0px;
-    width: 100%;
+    list-style: none;
+    margin-bottom: auto;
+
+
+
+  }
+  
+  @media only screen and (max-width: 767px) {
+    body {
+        font-size: small;
+    }
+    .nav2 {
+      display: none;
+    }
     
-}
-/*
-nav a:link{
-    background-color: white;
-}
-nav a:hover, nav a:focus {
-    background-color: cornsilk;
-}
-nav a:active{
-    background-color: aquamarine;
-}
-nav ul>li ul{
-    position: absolute;
-    margin-top: 0;
-    margin-left: 100%;
-    display: none;
-}
+    .nav1 {
+      display: flex;
+      flex-direction: row;
+      top: 0%;
+      width: 50%;
+      background-color: lightgray;
+      
 
-nav>ul>li:hover>ul{
-    display: block;
-}
-*/
-.navbar{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-.navbar > li{
-    display: inline-block;
-    position: relative;
-}
+    }
+    
+    .mobileNavBar .navbar2 {
+      display: none;
+    }
+    
+    .navbar ul {
+      display: none;
+    }
+    
+    .mobileNavBar li:nth-child(3):hover .navbar2{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      position: absolute;
 
-.navbar > li > a{
-    display: block;
-    padding: 10px;
-}
+    }
+    
+    .mobileNavBar li:hover, .navbar li:hover {
+      background-color: darkgray;
+    }
+    
+    .mobileNavBar li, .navbar li{
+      display: inline-block;
+      width: 100%
+    }
+    .nav1 {
+        display: none;
+      }
+      
+    #mnavtoggle:checked ~ .nav1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    label {
+        display: inline-block;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .hammenu {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .hamcheck{
+        display: none;
+    }
+    .mobileNavBar, .navbar2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      
+      .mobileNavBar li a, .navbar2 li a {
+        font-size: 16px;
+        padding: 10px;
 
-.navbar > li > ul{
-    position: absolute;
-    top: 100%;
-    display: none;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.navbar > li:hover > ul {
-    display: block;
-}
-
-.navbar > li > ul > li > a{
-    display: block;
-    padding: 10px;
-
+        
+      }
+  }
+  
+  @media only screen and (min-width: 768px){
+    .hamcheck{
+        display: none;
+    }
+    label {
+        display: none;
+        
+    }
+    .hammenu {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .nav1{
+      display: none;
+    }
+    
+    .nav2 {
+      display: flex;
+      flex-direction: row;
+      top: 0;
+      background-color: lightgray;
+      border: 1px solid black;
+    }
+    
+    .mobileNavBar .navbar2{
+      display: none;
+    }
+    
+    .navbar ul {
+      display: none;
+    }
+    
+    .navbar li:nth-child(3):hover ul {
+      display: flex;
+    }
+    .navbar li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .navbar li:hover {
+      background-color: darkgray;
+    }
+    
+    .navbar li ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        width: 50%;
+    }
+    
+    .navbar li:hover > ul{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+    
+    .navbar li ul li{
+        display: block;
+    }
+    
 }

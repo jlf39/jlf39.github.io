@@ -3,7 +3,8 @@
 }
 
 body {
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px solid black;
 }
 header {
@@ -35,90 +36,3 @@ footer {
     box-sizing: border-box;
     padding: 5px;
 }
-
-/*
-#p1::first-letter {
-    color: magenta;
-    
-
-}
-*/
-/*
-@media (max-width: 850px) {
-    body {
-        font-size: 20px;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-*/
-@media only screen and (min-width: 640px) {
-    #mobileNavbar {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    
-    #mobileNavbar ul {
-        display: flex;
-        flex-direction: row;
-        background-color: lightgrey;
-        margin: 0px;
-        padding: 10px;
-        list-style: none;
-    }
-    #mobileNavbar a {
-        padding: 10px;
-        color: black;
-        line-height: 15px;
-        display: block;
-        padding: 10px 10px 10px 10px;
-    }
-    #mobileNavbar a:hover {
-        background-color: darkgrey;
-    }
-    #mobileNavbar li {
-        float: left;
-    }
-    #mobileNavbar {
-        position: fixed;
-        background-color: lightgray;
-        top: 0px;
-        width: 100%;
-        
-    }
-    #mobileNavbar{
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-    }
-    #mobileNavbar > li {
-        display: inline-block;
-        position: relative;
-    }
-    #mobileNavbar > li > a {
-        display: block;
-        padding: 10px;
-    }
-    #mobileNavbar > li > ul {
-        position: absolute;
-        top: 100%;
-        display: none;
-        list-style: none;
-        margin: 0px;
-        padding: 0px;
-    }
-    #mobileNavbar > li:hover > ul {
-        display: block;
-    }
-    #mobileNavbar > li > ul > li > a {
-        display: block;
-        padding: 10px;
-    
-    }
-    .navbar{
-        display: none;
-    }
-}
-

@@ -14,17 +14,48 @@ School/Term: Mizzou spring 2023
 
 Developed: 3/5/2023
 
-Tested: 3/5/2023
+Tested: 3/19/2023
 
 -->
                 <link rel="stylesheet" type="text/css" href="nav.css">
                 <link rel="stylesheet" type="text/css" href="style.css">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
                <meta charset="utf-8">
                <title>Resources</title>
 </head>
 <body>
     <main>
         <header>Resources</header>
+        <div id="mnavid" class="mnav">
+            <input type="checkbox" class="hamcheck" id="mnavtoggle">
+            <label class= "hammenu" for="mnavtoggle">&#9776;></label>
+            <nav class="nav1">
+                
+                <ul class="mobileNavBar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="learn.html">Learn</a>
+                        <ul class="navbar2"><li><a href="resources.html">resources</a></li>
+                            <li><a href="#contact.html">#contact</a></li>
+                            <li><a href="#project.html">#project</a></li></ul>
+                </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="dnav">
+            <nav class="nav2">
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="learn.html">Learn</a>
+                        <ul><li>
+                            <a href="resources.html">resources</a></li>
+                            <li><a href="#contact.html">#contact</a></li>
+                            <li><a href="#project.html">#project</a></li></ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <h1>Resources</h1>
         <p class="p1">Contributor, T. T. (2021, December 15). What is Loop?: Definition from TechTarget. WhatIs.com. Retrieved January 29, 2023, from https://www.techtarget.com/whatis/definition/loop#:~:text=In%20computer%20programming%2C%20a%20loop,has%20reached%20a%20prescribed%20number. </p>
         <p class="p2">GeeksforGeeks. (2021, October 1). Python data types. GeeksforGeeks. Retrieved January 29, 2023, from https://www.geeksforgeeks.org/python-data-types/ </p>
@@ -41,17 +72,7 @@ Tested: 3/5/2023
         <p>Author: Josh Linck</p>
         <p>jlf39@umsystem.edu</p>
     </footer>
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn</a>
-            <ul><li><a href="resources.html">resources</a></li>
-            <li><a href="#contact.html">#contact</a></li>
-            <li><a href="#project.html">#project</a></li></ul>
-        </li>
-            </ul>
-        </nav>
+    
 </body>
 
 </html>

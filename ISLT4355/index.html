@@ -14,7 +14,7 @@ School/Term: Mizzou spring 2023
 
 Developed: 2/5/2023
 
-Tested: 3/5/2023
+Tested: 3/19/2023
 
 -->
                 <link rel="stylesheet" type="text/css" href="style.css">
@@ -25,6 +25,36 @@ Tested: 3/5/2023
 </head>
 <body>
     <header><h1>Home Page</h1></header>
+    <div id="mnavid" class="mnav">
+        <input type="checkbox" class="hamcheck" id="mnavtoggle">
+        <label class= "hammenu" for="mnavtoggle">&#9776;></label>
+        <nav class="nav1">
+            
+            <ul class="mobileNavBar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="learn.html">Learn</a>
+                    <ul class="navbar2"><li><a href="resources.html">resources</a></li>
+                        <li><a href="#contact.html">#contact</a></li>
+                        <li><a href="#project.html">#project</a></li></ul>
+            </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="dnav">
+        <nav class="nav2">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="learn.html">Learn</a>
+                    <ul><li>
+                        <a href="resources.html">resources</a></li>
+                        <li><a href="#contact.html">#contact</a></li>
+                        <li><a href="#project.html">#project</a></li></ul>
+                </li>
+            </ul>
+        </nav>
+        </div>
     <main>
         <h2>Welcome:</h2>
         <p>Hello and welcome to the website! This website will teach you the basics of the coding language python 
@@ -42,30 +72,7 @@ Tested: 3/5/2023
         <p>Author: Josh Linck</p>
         <p>jlf39@umsystem.edu</p>
     </footer>
-    <nav id="mobileNavbar">
-        <label id="hamburger"&#9776;></label>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn</a>
-                <ul class="navbar2"><li><a href="resources.html">resources</a></li>
-                    <li><a href="#contact.html">#contact</a></li>
-                    <li><a href="#project.html">#project</a></li></ul>
-        </li>
-        </ul>
-    </nav>
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="learn.html">Learn</a>
-                <ul><li><a href="resources.html">resources</a></li>
-                    <li><a href="#contact.html">#contact</a></li>
-                    <li><a href="#project.html">#project</a></li></ul>
-        </li>
-            </ul>
-        </nav>
-    
+   
 </body>
 
 </html>
