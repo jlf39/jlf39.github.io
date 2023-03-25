@@ -31,6 +31,9 @@ footer {
     font-size: 13px;
     padding: 10px;
     border-top: 1px solid black;
+    background-image: url("Images/background2.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .p1::first-letter{
@@ -40,6 +43,10 @@ footer {
 .p1, .p2{
     box-sizing: border-box;
     padding: 5px;
+}
+img.favicon {
+    float: left;
+    margin-right: 10px;
 }
 
 @media print {
