@@ -44,9 +44,12 @@ footer {
     box-sizing: border-box;
     padding: 5px;
 }
-img.favicon {
+img.iconp, img.icone {
     float: left;
     margin-right: 10px;
+}
+.iconp:hover, .icone:hover {
+    transform: scale(1.25);
 }
 
 @media print {
