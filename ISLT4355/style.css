@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Roboto;
+    src: url("Roboto.ttf");
+}
 .p2::first-line{
     text-indent: 2em;
 }
@@ -23,6 +27,7 @@ a {
 }
 
 footer {
+    font-family: 'Roboto', sans-serif;
     font-size: 13px;
     padding: 10px;
     border-top: 1px solid black;
@@ -35,4 +40,33 @@ footer {
 .p1, .p2{
     box-sizing: border-box;
     padding: 5px;
+}
+
+@media print {
+* { 
+    
+    font-family: serif;
+    background: transparent;
+    color: black;
+    box-shadow: none;
+    text-shadow: none;
+    }
+    .mnav,
+    .dnav,
+    footer{
+        display: none !important;
+    }
+    h1,
+    p,
+    blockquote{
+        color: black;
+        page-break-inside: avoid;
+        text-align: center;
+        font-size: 16px;
+        margin: 1in;
+    }
+    @page {
+        margin: 1in;
+    }
+    
 }
