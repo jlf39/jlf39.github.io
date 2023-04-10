@@ -79,6 +79,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+
       }
       
       .mobileNavBar li a, .navbar2 li a {
@@ -111,7 +112,7 @@
       flex-direction: row;
       top: 0;
       background-color: lightgray;
-      border: 1px solid black;
+      
     }
     
     .mobileNavBar .navbar2{
@@ -124,10 +125,12 @@
     
     .navbar li:nth-child(3):hover ul {
       display: flex;
+      
     }
     .navbar li {
         display: inline-block;
         position: relative;
+        border: 1px solid black;
     }
     
     .navbar li:hover {
