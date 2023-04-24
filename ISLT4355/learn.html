@@ -14,11 +14,13 @@ School/Term: Mizzou spring 2023
 
 Developed: 2/5/2023
 
-Tested: 4/9/2023
+Tested: 4/23/2023
 
 -->
                 <link rel="stylesheet" type="text/css" href="style.css">
                 <link rel="stylesheet" type="text/css" href="nav.css">
+                <link rel="email icon" href="Images/emailIcon.ico" type="image/x-icon">
+                <link rel="phone icon" href="Images/phoneIcon.ico" type="image/x-icon">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                <meta charset="utf-8">
                <title>Learn</title>
@@ -66,35 +68,48 @@ Tested: 4/9/2023
         </nav>
     </div>
     <main>
-        <h2>Welcome:</h2>
-        <h3 id="WhatIsPython">What is python?</h3>
-        <p>Python is a popular programming language. "A programming language is a system of notation for writing computer programs" (1). In other words, a programming language is a way for humans to communicate to a computer what they want it to do. Any programming language allows you to do incredible things, but what sets python apart from the others? “It uses a simplified syntax with an emphasis on natural language, for a much easier learning curve for beginners. And, because Python is free to use and is supported by an extremely large ecosystem of libraries and packages, it’s often the first-choice language for new developers.” (3) Python is a high level language with a simple syntax that makes it easy to code, remember, and read. Python is also used in many different fields for many different tasks. “Python is extensively applied in data science, data analysis, machine learning, data engineering, web development, software development, and other fields.”(6). Look below for an introductory video on Python!</p>
+        <div class = "mainLearnPage">
+        <p></p>
+        <h3 id="WhatIsPython" class="learnSubtitles">What is python?</h3>
+        <p class="learnItems">Python is a popular programming language. "A programming language is a system of notation for writing computer programs" (Programming Language). In other words, a programming language is a way for humans to communicate to a computer what they want it to do. Any programming language allows you to do incredible things, but what sets python apart from the others? “It uses a simplified syntax with an emphasis on natural language, for a much easier learning curve for beginners. And, because Python is free to use and is supported by an extremely large ecosystem of libraries and packages, it’s often the first-choice language for new developers.” (Why is Python so popular?) Python is a high level language with a simple syntax that makes it easy to code, remember, and read. Python is also used in many different fields for many different tasks. “Python is extensively applied in data science, data analysis, machine learning, data engineering, web development, software development, and other fields.”(What is Python used for?). Look below for an introductory video on Python!</p>
         
-        <iframe width="250" height="125" src="https://www.youtube.com/embed/Y8Tko2YC5hA" allowfullscreen></iframe>
+        <iframe class="learnItems" width="250" height="125" src="https://www.youtube.com/embed/Y8Tko2YC5hA" allowfullscreen></iframe>
+        <p class="learnItems">(What is Python?)</p>
         
-        <h3 id="Downloading">Downloading and Installing</h3>
-        <p>First you will need to download python. When you download python you are "essentially downloading an executable program onto your machine that operates as a python interpreter"(2). Downloading python gives you access to a python interpreter that allows you to code in python and run your program. This is known as the standard python development environment. Visit the link below and find the latest version of python for your operating system and download the file. Once the file has downloaded click it to run it and follow the prompts through the installation process. Once this has completed you are ready to open the standard python development environment. Find where you have installed python and open the development environment. The file name will appear as IDLE (Python 3.11 64 bit). It may look slightly different depending on the version you have downloaded. Once you have opened the interpreter click "file" then "new file". In the window that pops up click "file" then "save as” and save this file to wherever you would like it. Once you complete this step you have learned how to open your development environment and created your first blank program! Move on to the final section to start coding! If you are having trouble with this step check out the video below!</p>
-        <iframe width="250" height="125" src="https://www.youtube.com/embed/dX2-V2BocqQ" allowfullscreen></iframe>
-        <h3 id="HelloWorld">Hello World!</h3>
-        <p>Now that you have python installed and your first blank program created you can start coding. For your first program you will be printing "Hello world!". To do this we will need to use a function provided to you by the built-in library print(). The print function takes whatever you specify as its parameter in the parentheses and prints it to the standard output which in this case is your screen. In this case we want to output the sentence “Hello World” to the screen. In python programming all data has a type. “Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes.”(4) A few common data types are “Int” which is an Integer, “Str” which is a string, and “Bool” which is a boolean. Another nice feature of python is it determines the data type of information you store automatically. It is still important to know each data type and what operations can be performed on them, however, you won’t have to worry about defining the data types of information you store. The objective is to output a sentence, which would have the data type of string. To specify the parameter as a string simply put it in quotes. Now to take all the information you have learned and put it together. Go to your blank program you created and enter the print() function containing the string “Hello World” as follows: <code>print("Hello world!")</code>. Now save your file and click "run", then "run module". This executes your program and in the development environment the string will be printed. You should see the output "Hello world!". If you followed these steps you have learned basic information about python and created your first program, congratulations! If you are having issues you can watch the video below for a visual tutorial or if you’d like to test your skills and learn more about python continue reading. 
+        <h3 id="Downloading" class="learnSubtitles">Download and Installation</h3>
+        <p class="learnItems">First you will need to download python. When you download python you are "essentially downloading an executable program onto your machine that operates as a python interpreter"(Introducing the Python programming language). Downloading python gives you access to a python interpreter that allows you to code in python and run your program. This is known as the standard python development environment. Visit the link below and find the latest version of python for your operating system and download the file. Once the file has downloaded click it to run it and follow the prompts through the installation process. Once this has completed you are ready to open the standard python development environment. Find where you have installed python and open the development environment. The file name will appear as IDLE (Python 3.11 64 bit). It may look slightly different depending on the version you have downloaded. Once you have opened the interpreter click "file" then "new file". In the window that pops up click "file" then "save as” and save this file to wherever you would like it. Once you complete this step you have learned how to open your development environment and created your first blank program! Move on to the final section to start coding! If you are having trouble with this step check out the video below!</p>
+        <p class="learnItems"><a href="https://www.python.org/downloads/" class="downloadLink">Python Download</a></p>
+        <iframe class="learnItems" width="250" height="125" src="https://www.youtube.com/embed/dX2-V2BocqQ" allowfullscreen></iframe>
+        <p class="learnItems">(How to Download and Install Python 3.6 on Windows 10)</p>
+
+        <h3 id="HelloWorld" class="learnSubtitles">Hello World!</h3>
+        <p class="learnItems">Now that you have python installed and your first blank program created you can start coding. For your first program you will be printing "Hello world!". To do this we will need to use a function provided to you by the built-in library print(). The print function takes whatever you specify as its parameter in the parentheses and prints it to the standard output which in this case is your screen. In this case we want to output the sentence “Hello World” to the screen. In python programming all data has a type. “Data types are the classification or categorization of data items. It represents the kind of value that tells what operations can be performed on a particular data. Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes.”(Python data types) A few common data types are “Int” which is an Integer, “Str” which is a string, and “Bool” which is a boolean. Another nice feature of python is it determines the data type of information you store automatically. It is still important to know each data type and what operations can be performed on them, however, you won’t have to worry about defining the data types of information you store. The objective is to output a sentence, which would have the data type of string. To specify the parameter as a string simply put it in quotes. Now to take all the information you have learned and put it together. Go to your blank program you created and enter the print() function containing the string “Hello World” as follows: <code>print("Hello world!")</code>. Now save your file and click "run", then "run module". This executes your program and in the development environment the string will be printed. You should see the output "Hello world!". If you followed these steps you have learned basic information about python and created your first program, congratulations! If you are having issues you can watch the video below for a visual tutorial or if you’d like to test your skills and learn more about python continue reading. 
 </p>
-    <iframe width="250" height="125" src="https://www.youtube.com/embed/hp4pYFASTrc" allowfullscreen></iframe>
-    <h3 id="Challenge">Challenge</h3>
-    <p>A common tool used in coding is a loop. “In computer programming, a loop is a sequence of instructions that is continually repeated until a certain condition is reached.”(5). A loop is a very powerful and commonly used tool in programming. A loop allows you to repeat a process until it is complete. The two most common types of loops are a for loop and a while loop. In python a for loop would look like this: <code>for(x in food) print(x)</code>, where x is a variable specified by you and food is a list of foods. For every item in the list the loop will check if “x” is equal to the item in the list if “x” appears in the list, the value of “x” will be printed. The other most common type is a while loop. The while loop works where you specify a parameter and the loop will run until the specified condition is no longer true. An example of a while loop would look like this:</p>
-    <p><code> 
+    <iframe class="learnItems" width="250" height="125" src="https://www.youtube.com/embed/hp4pYFASTrc" allowfullscreen></iframe>
+    <p class="learnItems">(Hello world program)</p>
+
+    <h3 id="Challenge" class="learnSubtitles">Challenge</h3>
+    <p class="learnItems">A common tool used in coding is a loop. “In computer programming, a loop is a sequence of instructions that is continually repeated until a certain condition is reached.”(What is Loop?). A loop is a very powerful and commonly used tool in programming. A loop allows you to repeat a process until it is complete. The two most common types of loops are a for loop and a while loop. In python a for loop would look like this: <code>for(x in food) print(x)</code>, where x is a variable specified by you and food is a list of foods. For every item in the list the loop will check if “x” is equal to the item in the list if “x” appears in the list, the value of “x” will be printed. The other most common type is a while loop. The while loop works where you specify a parameter and the loop will run until the specified condition is no longer true. An example of a while loop would look like this:</p>
+    <p class="learnItems"><code> 
         x=0 
         while x &lt; 5: 
             print(x) 
             x=x+1 
     </code></p>  
-    <p>This loop will run as long as a previously specified variable, “x”, is less than 5. Everytime this loop runs it will check to see if “x” is less than 5 and if it is will print “x” and set “x” equal to itself plus one. Each time a loop runs is called an iteration. If x’s value never changes and the condition of the loop is met, the loop will run endlessly. This is why x=x+1 was added, to increase the value of “x” until the condition is no longer met. For a challenge Try to make a while loop that counts backwards from 10 to -5 and prints the value each iteration. For an extra challenge try to make the value print every other number from 10 to -5 (-5 ,-3, -1…). If you are having trouble check out the video below!</p>
-    <iframe width="250" height="125" src="https://www.youtube.com/embed/D0Nb2Fs3Q8c" allowfullscreen></iframe>
+    <p class="learnItems">This loop will run as long as a previously specified variable, “x”, is less than 5. Everytime this loop runs it will check to see if “x” is less than 5 and if it is will print “x” and set “x” equal to itself plus one. Each time a loop runs is called an iteration. If x’s value never changes and the condition of the loop is met, the loop will run endlessly. This is why x=x+1 was added, to increase the value of “x” until the condition is no longer met. For a challenge Try to make a while loop that counts backwards from 10 to -5 and prints the value each iteration. For an extra challenge try to make the value print every other number from 10 to -5 (-5 ,-3, -1…). If you are having trouble check out the video below!</p>
+    <iframe class="learnItems" width="250" height="125" src="https://www.youtube.com/embed/D0Nb2Fs3Q8c" allowfullscreen></iframe>
+    <p class="learnItems">(While Loops in Python)</p>
+
+    <p></p>
+        </div>
     </main>
+    <p></p>
     <footer>
         <p>Author: Josh Linck</p>
-        <p><img src="Images/phone_icon.ico" alt="Favicon" class="icone"> Phone: 1-888-888-8888</p>
-        <p><img src="Images/email_icon.ico" alt="Favicon" class="iconp"> jlf39@umsystem.edu</p>
+        <p><img src="Images/phoneIcon.ico" alt="Favicon" class="icone"> Phone: 1-888-888-8888</p>
+        <p><img src="Images/emailIcon.ico" alt="Favicon" class="iconp"> jlf39@umsystem.edu</p>
     </footer>
+    <p></p>
     
    
 </body>

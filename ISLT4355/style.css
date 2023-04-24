@@ -5,16 +5,29 @@
 .p2::first-line{
     text-indent: 2em;
 }
-
-body {
+.mainLearnPage {
     padding: 10px;
+}
+.aboutItem, .homeItem {
+    padding: 10px;
+}
+body {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid black;
+    /*
+    background-image: url("Images/fb1.jpg");
+    */
+    background-color: lightblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto 400%;
 }
 header {
     padding: 10px;
-    border-bottom: 1px solid black;
+    
+    
 }
 h1 {
     color: black;
@@ -23,7 +36,6 @@ a {
     padding: 10px;
     border: 1px solid black;
     margin: 5px;
-    background-color: lightgray;
     display: inline-block;
 }
 
@@ -31,21 +43,42 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     padding: 10px;
-    border-top: 1px solid black;
-    background-image: url("Images/background2.jpg");
+    border: 1px solid black;
+    /*border-top: 1px solid black;*/
+    box-sizing: border-box;
+    background-image: url("Images/fb2.jpg");
     background-size: cover;
     background-position: center;
 }
 
+main a {
+    background-color: rgb(229, 248, 255);
+}
+main > p > a {
+    background-color: rgb(229, 248, 255);
+}
+
+/*
 .p1::first-letter{
     color: magenta;
 }
-
+*/
 .p1, .p2{
-    box-sizing: border-box;
-    padding: 5px;
+    margin: 0;
+    border-radius: 3px;
+    padding: 15px;
 }
-img.iconp, img.icone {
+.resourceItems {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+}
+.paddingClass {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.img.iconp, img.icone {
     float: left;
     margin-right: 10px;
 }
@@ -63,6 +96,53 @@ input[type="text"], input[type="email"], textarea{
 }
 textarea{
     height: 150px;
+    background-color: rgb(229, 248, 255);
+}
+.contactForm input {
+    background-color: rgb(229, 248, 255);
+}
+.contactForm {
+    padding: 10px;
+}
+.resumeLink:hover {
+    background-color: lightgray;
+}
+.downloadLink:hover {
+    background-color: lightgray;
+}
+.learnItems {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.learnSubtitles {
+    padding-top: 10px;
+}
+.aboutMedia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.selfImage, .resumeVideo  {
+    flex: 1;
+    height: 265px;   
+}
+.selfImage {
+    margin-left: 20px;
+    
+}
+
+.resumeVideo {
+    margin-right: 20px;
+    
+}
+
+.resumeLink {
+    margin-left: 75px;
+    
+}
+.rlc {
+    margin: 10px;
+    
 }
 *{
     box-sizing: border-box;

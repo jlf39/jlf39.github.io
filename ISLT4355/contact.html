@@ -14,19 +14,19 @@ School/Term: Mizzou spring 2023
 
 Developed: 4/14/2023
 
-Tested: 4/14/2023
+Tested: 4/23/2023
 
 -->
                 <link rel="stylesheet" type="text/css" href="style.css">
                 <link rel="stylesheet" type="text/css" href="nav.css">
-                <link rel="email icon" href="Images/email icon.ico" type="image/x-icon">
-                <link rel="phone icon" href="Images/phone icon.ico" type="image/x-icon">
+                <link rel="email icon" href="Images/emailIcon.ico" type="image/x-icon">
+                <link rel="phone icon" href="Images/phoneIcon.ico" type="image/x-icon">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                <meta charset="utf-8">
                <title>Home</title>
 </head>
 <body>
-    <header><h1>Home Page</h1></header>
+    <header><h1>Contact me</h1></header>
     <div id="mnavid" class="mnav">
         <input type="checkbox" class="hamcheck" id="mnavtoggle">
         <label class= "hammenu" for="mnavtoggle">&#9776;></label>
@@ -70,11 +70,18 @@ Tested: 4/14/2023
     <main>
         <h2>Contact Form</h2>
         <div class="contactForm">
-            <form action="mailto:jlf39@umsystem.edu?Subject=Educational%20Website%20contact" method="post">
-                <input type="text" id="fN" name="fN" placeholder="First Name" autofocus required>
-                <input type="text" id="lN" name="lN" placeholder="Last Name" required>
-                <input type="text" id="email1" name="email1" placeholder="Email" required>
-                <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <form action="mailto:jlf39@umsystem.edu?Subject=Educational%20Website%20contact" method="post" enctype="text/plain">
+                <label for="fN">First Name:</label>
+                <input type="text" id="fN" name="First name" placeholder="First Name" autofocus required>
+
+                <label for="lN">Last Name:</label>
+                <input type="text" id="lN" name="Last name" placeholder="Last Name" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="Email" placeholder="Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="Message" placeholder="Message" required></textarea>
                 <button type="submit" class="button1">Contact</button>
                 
             </form>
@@ -82,10 +89,13 @@ Tested: 4/14/2023
     </main>
     <footer>
         <p>Author: Josh Linck</p>
-        <p><img src="Images/phone_icon.ico" alt="Favicon" class="icone"> Phone: 1-888-888-8888</p>
-        <p><img src="Images/email_icon.ico" alt="Favicon" class="iconp"> jlf39@umsystem.edu</p>
+        <p><img src="Images/phoneIcon.ico" alt="Favicon" class="icone"> Phone: 1-888-888-8888</p>
+        <p><img src="Images/emailIcon.ico" alt="Favicon" class="iconp"> jlf39@umsystem.edu</p>
     </footer>
    
 </body>
 
 </html>
+
+
+
