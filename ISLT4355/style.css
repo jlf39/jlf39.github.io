@@ -15,7 +15,7 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid black;
+    min-height: 100vh;
     /*
     background-image: url("Images/fb1.jpg");
     */
@@ -42,13 +42,16 @@ a {
 footer {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
     border: 1px solid black;
     /*border-top: 1px solid black;*/
     box-sizing: border-box;
     background-image: url("Images/fb2.jpg");
     background-size: cover;
     background-position: center;
+    margin-top: auto;
 }
 
 main a {
@@ -123,12 +126,18 @@ textarea{
     align-items: center;
 }
 .selfImage, .resumeVideo  {
-    flex: 1;
+    
+    flex: .5;
+    
     height: 265px;   
+    
 }
 .selfImage {
     margin-left: 20px;
-    
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 400px;
 }
 
 .resumeVideo {
